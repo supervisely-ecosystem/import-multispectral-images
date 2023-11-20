@@ -1,5 +1,5 @@
 import os
-from typing import List, Tuple, Dict
+from typing import List
 from collections import defaultdict, namedtuple
 import supervisely as sly
 import numpy as np
