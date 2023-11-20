@@ -33,19 +33,12 @@ def main():
 
     for group_path, image_group in directories.items():
         sly.logger.info(f"Found files in {group_path}.")
-        # directory_name = os.path.basename(directory_path)
-        # dataset = g.api.dataset.create(project.id, directory_name)
-        # for file_group in file_groups:
+
         images = []
         channels = []
 
         images_to_split, images_to_upload = image_group.split, image_group.upload
-        # if len(images_to_split) > 0:
-        #     file_base_name = os.path.basename(images_to_split[0])
-        # elif len(images_to_upload) > 0:
-        #     file_base_name = os.path.basename(images_to_upload[0])
-        # else:
-        #     continue
+
         group_name = os.path.basename(group_path)
         for image_to_upload in images_to_upload:
             images.append(os.path.join(group_path, image_to_upload))
