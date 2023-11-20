@@ -1,10 +1,11 @@
 import os
-
 import supervisely as sly
-
 from dotenv import load_dotenv
 
-sly.logger.info(f"Python current working directory: {os.getcwd()}")
+if sly.is_development():
+    # * For convinient development, has no effect in the production.
+    load_dotenv("local.env")
+    load_dotenv(os.path.expanduser("~/supervisely.env"))
 
 ABSOLUTE_PATH = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.dirname(ABSOLUTE_PATH)
@@ -12,22 +13,6 @@ sly.logger.debug(f"Absolute path: {ABSOLUTE_PATH}, parent dir: {PARENT_DIR}")
 
 SPLIT_TO_CHANNELS_DIR_NAME = "split"
 UPLOAD_AS_IMAGES_DIR_NAME = "images"
-
-if sly.is_development():
-    # * For convinient development, has no effect in the production.
-    local_env_path = os.path.join(PARENT_DIR, "local.env")
-    supervisely_env_path = os.path.expanduser("~/supervisely.env")
-    sly.logger.debug(
-        "Running in development mode. Will load .env files... "
-        f"Local .env path: {local_env_path}, Supervisely .env path: {supervisely_env_path}"
-    )
-
-    if os.path.exists(local_env_path) and os.path.exists(supervisely_env_path):
-        sly.logger.debug("Both .env files exists. Will load them.")
-        load_dotenv(local_env_path)
-        load_dotenv(supervisely_env_path)
-    else:
-        sly.logger.warning("One of the .env files is missing. It may cause errors.")
 
 api: sly.Api = sly.Api.from_env()
 
@@ -55,11 +40,11 @@ sly.logger.debug(f"App starting... File: {SLY_FILE}, Folder: {SLY_FOLDER}")
 
 if SLY_FILE:
     sly.logger.info(
-        "Path to file is provided, the application will be run in file mode. "
+        "Path to file is provided, the application will run in file mode. "
         f"File path: {SLY_FILE}"
     )
 elif SLY_FOLDER:
     sly.logger.info(
-        "Path to folder is provided, the application will be run in folder mode. "
+        "Path to folder is provided, the application will run in folder mode. "
         f"Folder path: {SLY_FOLDER}"
     )
