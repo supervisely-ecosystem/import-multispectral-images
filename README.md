@@ -69,4 +69,4 @@ In this example, we have 3 groups with images. In the first group, we have one i
 After the app is finished, you will get a project with images, where images a grouped by the group with the name of the corresponding folder, which contains images.<br>
 The images within the group will have synchronized zooming, panning and labeling.<br>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286222958-0ed46b3e-9b3b-4f59-8f3a-1e8f87c794b9.gif"/>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286261123-a07db05b-a5fe-4f9b-891e-8db99179b1b9.gif"/>
