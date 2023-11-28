@@ -1,5 +1,5 @@
 <div align="center" markdown>
-<img src="POSTER"/>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286251873-effe616d-6250-4da6-ba8b-41ced5f701ee.png"/>
 
 # Import multispectral images as channels or as separate images
 

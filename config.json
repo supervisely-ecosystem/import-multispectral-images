@@ -5,7 +5,7 @@
   "description": "Import multispectral images as channels or as separate images.",
   "icon": "https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286237022-f1aa9736-67be-4658-9446-46510f5086de.png",
   "icon_cover": true,
-  "poster": "",
+  "poster": "https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286251873-effe616d-6250-4da6-ba8b-41ced5f701ee.png",
   "categories": ["images", "import"],
   "need_gpu": false,
   "community_agent": true,
