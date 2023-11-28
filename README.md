@@ -7,6 +7,7 @@
   <a href="#Overview">Overview</a> •
   <a href="#Preparation">Preparation</a> •
   <a href="#How-To-Run">How To Run</a>
+  <a href="#Results">Results</a>
 </p>
 
 [![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](https://ecosystem.supervise.ly/apps/supervisely-ecosystem/import-multispectral-images)
@@ -55,10 +56,17 @@ In this example, we have 3 groups with images. In the first group, we have one i
 
 **Step 1:** Run the app<br>
 
-<img src=SCREEN001/><br>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286258291-93e42bee-6709-40a6-946c-0809fc398c18.png"/><br>
 
 **Step 2:** Drag and drop the archive or select it in Team Files<br>
 
-<img src="SCREEN002"/><br>
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286258301-008d6b5e-c1cb-408f-aa26-2b62c80508f6.png"/><br>
 
 **Step 3:** Press the `Run` button<br>
+
+## Results
+
+After the app is finished, you will get a project with images, where images a grouped by the group with the name of the corresponding folder, which contains images.<br>
+The images within the group will have synchronized zooming, panning and labeling.<br>
+
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286222958-0ed46b3e-9b3b-4f59-8f3a-1e8f87c794b9.gif"/>
