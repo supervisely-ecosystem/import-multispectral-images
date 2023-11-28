@@ -3,7 +3,7 @@
   "type": "app",
   "version": "2.0.0",
   "description": "Import multispectral images as channels or as separate images.",
-  "icon": "https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286236495-8aaf4d5d-5056-493f-a0fe-43c6fda71fb9.png",
+  "icon": "https://github-production-user-asset-6210df.s3.amazonaws.com/118521851/286237022-f1aa9736-67be-4658-9446-46510f5086de.png",
   "icon_cover": true,
   "poster": "",
   "categories": ["images", "import"],
