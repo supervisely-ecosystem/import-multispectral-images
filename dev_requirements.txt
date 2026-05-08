@@ -1,2 +1,2 @@
-supevisely==6.73.564
+supervisely==6.73.564
 tifffile==2026.5.2
